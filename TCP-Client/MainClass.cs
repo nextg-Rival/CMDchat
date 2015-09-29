@@ -24,7 +24,7 @@ namespace TCP_Client
             loginWINP.WriteLine(Password);
             loginWINP.Close();
             // !!!MASSIVE BUG - DOESN'T READ FROM CLIENT!!! ---------- IN THE CLIENT FILE THIS CODE IS PRETTY MUCH USELESS, RIGHT? WILL CHECK LATER ON!
-            FileStream loginReader = new FileStream("C:\\Desktop\\C#\\Programs\\Projects\\TCP server\\Login.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream loginReader = new FileStream(@"...\TCP server\Login.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader loginRINP = new StreamReader(loginReader);
             UNcompare = loginRINP.ReadLine();
             Pcompare = loginRINP.ReadLine();
