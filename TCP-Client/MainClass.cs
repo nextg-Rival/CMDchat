@@ -14,7 +14,7 @@ namespace TCP_Client
             //login system V2
             string UNcompare;
             string Pcompare;
-            string pathToTxt = @"C:\Desktop\C#\Programs\Projects\TCP server\Login.txt";
+            string pathToTxt = @"...\TCP server\Login.txt";
             Console.WriteLine("Enter your username please!");
             string Username = Console.ReadLine();
             Console.WriteLine("Enter your password please!");
